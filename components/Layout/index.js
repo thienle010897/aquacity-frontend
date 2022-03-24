@@ -5,7 +5,7 @@ import Header from '../Header';
 import Controls from '../Controls';
 import NavBars from '../NavBars';
 
-const Layout = () => {
+const Layout = ({ children }) => {
   
   return (
     <>
@@ -18,6 +18,7 @@ const Layout = () => {
         <Header/>
         <Controls/>
         <NavBars/>
+        {children}
       </div>
     </>
   );
