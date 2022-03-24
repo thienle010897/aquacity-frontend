@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 200px;
+        img {
+            width: 100%;
+        }
+    }
+    .menu {
+        h1 {
+            color: var(--primary-color-);
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}

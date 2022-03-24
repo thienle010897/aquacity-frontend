@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import styles from "./styles.module.scss";
+import Header from '../Header';
+import Controls from '../Controls';
+import NavBars from '../NavBars';
 
 const Layout = () => {
   
@@ -12,7 +15,9 @@ const Layout = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.layout}>
-
+        <Header/>
+        <Controls/>
+        <NavBars/>
       </div>
     </>
   );

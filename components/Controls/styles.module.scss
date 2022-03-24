@@ -1,0 +1,159 @@
+.controls {
+    position: fixed;
+    bottom: 0;
+    .controlsBlock {
+        .button.home {
+            transform: translateY(-135px);
+        }
+        .button {
+            position: relative;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            margin: 10px ;
+            padding: 3px;
+            border: 2.5px solid var(--boder-color-);
+            transition: all 0.25s ease-in-out;
+            display: flex;
+            cursor: pointer;
+            .btn {
+                margin: auto;
+                width: 40px;
+                height: 40px;
+                transition: all 0.25s ease-in-out;
+                background-color: var(--primary-color-);
+                display: flex;
+                border-radius: 50%;
+                .icon {
+                    transition: all 0.25s ease-in-out;
+                    margin: auto;
+                    color: var(--boder-color-);
+
+                }
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                background-color: var(--primary-color-);
+                opacity: 0;
+                transition: all 0.25s ease-in-out;
+                h5 {
+                    margin:  auto auto auto 4px;
+                    color: var(--boder-color-);
+                }
+                
+            }
+            .content.down {
+                width: 100px;
+                height: 50px;
+                left: 110px;
+                top: 0px;
+                h5 {
+                    // transform: translateX(-20px);
+                }
+                ::before {
+                    content: "";
+                    left: -50px;
+                    position: absolute;
+                    border: 25px solid;
+                    bottom: 0;
+                    border-color: transparent var(--primary-color-) transparent transparent;
+
+                }
+
+            }
+            .content.phone {
+                width: 250px;
+                height: 70px;
+                left: 120px;
+                top: -10px;
+
+                h5 {
+                }
+                ::before {
+                    content: "";
+                    left: -70px;
+                    position: absolute;
+                    border: 35px solid;
+                    bottom: 0;
+                    border-color: transparent var(--primary-color-) transparent transparent;
+
+                }
+            }
+
+
+            &:hover {
+                border-color: var(--primary-color-);
+                .btn {
+                    background-color: var(--boder-color-);
+                    .icon {
+                        color: var(--primary-color-);
+                        animation: action 0.3s infinite;
+
+                    }
+                    @keyframes action {
+                        0% {
+                           transform: rotate(10deg);
+                        }
+                        25% {
+                           transform: rotate(0deg);
+                        }
+                        50% {
+                           transform: rotate(10deg);
+                        }
+                        75% {
+                           transform: rotate(0deg);
+                        }
+                        100% {
+                           transform: rotate(10deg);
+                        }
+                     }
+                }
+
+                .content {
+                    transform: translateX(-30px);
+                    opacity: 1;
+                }
+            }
+        }
+        .register {
+            border: 2.5px solid var(--boder-color-);
+            border-radius: 100px;
+            // height: 52px;
+            padding: 3px;
+            margin: 10px;
+            display: flex;
+            transform: rotate(-90deg) translateY(calc(100%));
+            transform-origin: left bottom;
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+            .bg {
+                background-color: var(--primary-color-);
+                height: 40px;
+                display: flex;
+                padding: 0 10px;
+                border-radius: 100px;
+                margin: auto;
+                transition: all 0.25s ease-in-out;
+
+                h3 {
+                    transition: all 0.25s ease-in-out;
+                    margin: auto;
+                    color: var(--boder-color-);
+                }
+            }
+            &:hover {
+                border-color: var(--primary-color-);
+                .bg {
+                    background-color: var(--boder-color-);
+                    h3 {
+                        color: var(--primary-color-);
+
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+:root {
+  --primary-color-: #ef0000;
+  --text-color-: #6b6868;
+  --color-hover-: #ff3308;
+}
+.MuiPagination-ul li button {
+  background-color: var(--primary-color-);
+  color: white;
+}
+.MuiPagination-ul li button:hover {
+  background-color: var(--color-hover-);
+}
+.error-page {
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-page p span {
+  color: var(--primary-color-);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-right: 1px solid var(--primary-color-);
+  padding-right: 10px;
+  margin-right: 10px;
+}

@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color-: rgb(7, 65, 76);
+  --text-color-: #6b6868;
+  --color-hover-: #ff3308;
+  --boder-color-: rgb(232, 222, 139)
+}
