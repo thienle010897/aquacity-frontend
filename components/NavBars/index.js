@@ -25,26 +25,26 @@ const navs = [
     link: "/",
   },
 
-  {
-    name: "Phân khu",
-    link: "/",
-  },
-  {
-    name: "Thư viện",
-    link: "/",
-  },
-  {
-    name: "Tin tức",
-    link: "/",
-  },
-  {
-    name: "Liên hệ",
-    link: "/",
-  },
-  {
-    name: "Thông tin chung",
-    link: "/",
-  },
+  // {
+  //   name: "Phân khu",
+  //   link: "/",
+  // },
+  // {
+  //   name: "Thư viện",
+  //   link: "/",
+  // },
+  // {
+  //   name: "Tin tức",
+  //   link: "/",
+  // },
+  // {
+  //   name: "Liên hệ",
+  //   link: "/",
+  // },
+  // {
+  //   name: "Thông tin chung",
+  //   link: "/",
+  // },
   
 
 ]
