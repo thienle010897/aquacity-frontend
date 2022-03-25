@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         <div className={styles.layout}>
           <Header />
           <Controls />
-          <NavBars />
+          {/* <NavBars /> */}
           {children}
         </div>
       </ContextProvider>

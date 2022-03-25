@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export default function Ground() {
   return (
-    <div style={{ position: "relative" }}>
+    <div >
       <div className={styles.imgMapCanvs}>
         <div className={styles.imgMap}>
           <img

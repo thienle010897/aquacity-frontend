@@ -48,8 +48,8 @@ const navs = [
   
 
 ]
-const NavBars = () => {
-  const [active, setActive] = useState(0);
+const NavBars = ({setActive, active}) => {
+  // const [active, setActive] = useState(0);
   useEffect(()=> {
     localStorage.setItem("indexActive", 0)
   }, [])
