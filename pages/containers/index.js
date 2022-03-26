@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Mousewheel, Pagination } from "swiper";
 import HomePage from "../trang-chu";
 import Ground from "../mat-bang";
 import Position from "../vi-tri";
@@ -25,6 +24,8 @@ export default function Containers() {
 
   const handleOnWheel = (event) => {
     if (Number(event.nativeEvent.timeStamp) - timeStamp > 1000) {
+      setPrevIndex(active)
+
       if (event.nativeEvent.deltaY > 0) {
         setActive((prev) => {
           if (prev < 9) {
@@ -43,6 +44,8 @@ export default function Containers() {
         });
       }
       settimeStamp(event.nativeEvent.timeStamp);
+      const timeOut = setTimeout(()=> setPrevIndex(null), 700)
+      return () => clearTimeout(timeOut)
     }
   };
 
@@ -52,15 +55,16 @@ export default function Containers() {
         setPrevIndex={setPrevIndex}
         setActive={setActive}
         active={active}
+        prevIndex={prevIndex}
       />
       {nums.map((item, index) => (
         <div
           key={index}
           className={clsx(styles.slide, {
-            [styles.active]: Number(active) === index,
-            [styles.current]: Number(prevIndex) === index,
-            [styles.beforeActive]: Number(active) > index,
-            [styles.afterActive]: Number(active) < index,
+            [styles.active]: active === index,
+            [styles.current]: prevIndex === index,
+            [styles.beforeActive]: active > index,
+            [styles.afterActive]: active < index,
           })}
         >
           {index === 0 && <HomePage />}

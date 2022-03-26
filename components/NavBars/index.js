@@ -47,11 +47,12 @@ const navs = [
   
 
 ]
-const NavBars = ({setActive, active, setPrevIndex}) => {
+const NavBars = ({setActive, active, setPrevIndex, prevIndex}) => {
   
 
   const handleClickNav = (index)=> {
     setPrevIndex(active)
+    console.log(active)
     localStorage.setItem("indexActive", index)
     setActive(index)
     const timeOut = setTimeout(()=> setPrevIndex(null), 700)
@@ -63,7 +64,7 @@ const NavBars = ({setActive, active, setPrevIndex}) => {
         {navs.map((item, index)=> (
           // <Link key={index} href={item.link}>
             <div key={index}  className={clsx(styles.nav, {
-              [styles.active] : Number(active) === index
+              [styles.active] : active === index
             })}
               onClick={()=> handleClickNav(index)}
             >

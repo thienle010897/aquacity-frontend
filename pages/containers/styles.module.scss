@@ -18,12 +18,10 @@
   }
   .slide.beforeActive {
     transform: translateY(-100%);
-    transition: all 0.8s ease-in-out;
 
   }
   .slide.afterActive {
     transform: translateY(100%);
-    transition: all 0.8s ease-in-out;
 
   }
   
