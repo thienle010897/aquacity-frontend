@@ -52,6 +52,7 @@ export default function Containers() {
     <div className={styles.containers} 
       onWheel={handleOnWheel}
     >
+      
       <NavBars 
         setPrevIndex={setPrevIndex}
         setActive={setActive}
