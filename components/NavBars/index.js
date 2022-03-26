@@ -53,8 +53,8 @@ const NavBars = ({setActive, active, setPrevIndex}) => {
   const handleClickNav = (index)=> {
     setPrevIndex(active)
     localStorage.setItem("indexActive", index)
-    setActive(localStorage.getItem("indexActive"))
-    const timeOut = setTimeout(()=> setPrevIndex(null), 800)
+    setActive(index)
+    const timeOut = setTimeout(()=> setPrevIndex(null), 700)
     return () => clearTimeout(timeOut)
   }
   return (

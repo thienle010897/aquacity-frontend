@@ -13,6 +13,7 @@ import Sliders from "../phan-khu";
 import styles from "./styles.module.scss";
 import NavBars from "../../components/NavBars";
 import clsx from "clsx";
+import Library from "../thu-vien";
 
 export default function Containers() {
   const [active, setActive] = useState(0);
@@ -68,7 +69,7 @@ export default function Containers() {
           {index === 3 && <Ecological />}
           {index === 4 && <Utilities />}
           {index === 5 && <Sliders />}
-          {index === 6 && <HomePage />}
+          {index === 6 && <Library />}
           {index === 7 && <Position />}
           {index === 8 && <Ecological />}
           {index === 9 && <Utilities />}
