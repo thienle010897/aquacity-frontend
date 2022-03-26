@@ -22,11 +22,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Containers/>
-      {/* <HomePage />
-      <Ground />
-      <Position />
-      <Ecological />
-      <Utilities /> */}
     </div>
   );
 }

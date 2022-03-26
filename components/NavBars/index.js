@@ -24,46 +24,45 @@ const navs = [
     name: "Tiện ích",
     link: "/",
   },
-
-  // {
-  //   name: "Phân khu",
-  //   link: "/",
-  // },
-  // {
-  //   name: "Thư viện",
-  //   link: "/",
-  // },
-  // {
-  //   name: "Tin tức",
-  //   link: "/",
-  // },
-  // {
-  //   name: "Liên hệ",
-  //   link: "/",
-  // },
-  // {
-  //   name: "Thông tin chung",
-  //   link: "/",
-  // },
+  {
+    name: "Phân khu",
+    link: "/",
+  },
+  {
+    name: "Thư viện",
+    link: "/",
+  },
+  {
+    name: "Tin tức",
+    link: "/",
+  },
+  {
+    name: "Liên hệ",
+    link: "/",
+  },
+  {
+    name: "Thông tin chung",
+    link: "/",
+  },
   
 
 ]
-const NavBars = ({setActive, active}) => {
-  // const [active, setActive] = useState(0);
-  useEffect(()=> {
-    localStorage.setItem("indexActive", 0)
-  }, [])
+const NavBars = ({setActive, active, setPrevIndex}) => {
+  
 
   const handleClickNav = (index)=> {
+    setPrevIndex(active)
     localStorage.setItem("indexActive", index)
     setActive(localStorage.getItem("indexActive"))
+    const timeOut = setTimeout(()=> setPrevIndex(null), 800)
+    return () => clearTimeout(timeOut)
   }
   return (
     <div className={styles.navBars}>
       <div className={styles.wrapper}>
         {navs.map((item, index)=> (
-          <Link key={index} href={item.link}>
-            <div  className={clsx(styles.nav, {
+          // <Link key={index} href={item.link}>
+            <div key={index}  className={clsx(styles.nav, {
               [styles.active] : Number(active) === index
             })}
               onClick={()=> handleClickNav(index)}
@@ -73,7 +72,7 @@ const NavBars = ({setActive, active}) => {
                 <h4>{item.name}</h4>
               </div>
             </div>
-          </Link>
+          // </Link>
         ))}
       </div>
     </div>

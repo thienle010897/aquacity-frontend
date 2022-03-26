@@ -1,7 +1,26 @@
 .containers {
-  position: relative;
+  width: 100%;
   .slide {
-    position: absolute,
-
+    position: absolute;
   }
+  .slide.active {
+    position: absolute;
+    transform: translateY(0);
+    transition: all 0.8s ease-in-out;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .slide.current {
+    transform: translateY(0)!important;
+    transition: all 1.6s ease-in-out;
+    z-index: 1;
+    // opacity: 1;
+  }
+  .slide.beforeActive {
+    transform: translateY(-100%);
+  }
+  .slide.afterActive {
+    transform: translateY(100%);
+  }
+  
 }

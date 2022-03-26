@@ -3,16 +3,34 @@ import styles from "./styles.module.scss";
 
 export default function Ecological() {
   return (
-    <>
-      <div className={styles.video}>
-        <video autoPlay loop muted playsInline className={styles.ofcv}>
-          <source
-            src="https://aquacity.com.vn/wp-content/uploads/2021/05/banner.mp4"
-            type="video/mp4"
-            width="100%"
+    <div >
+      <div className={styles.imgMapCanvs}>
+        <div className={styles.imgMap}>
+          <img
+            src="https://aquacity.com.vn/wp-content/uploads/2021/05/phoenix-resize-rgb.jpg"
+            alt=""
           />
-        </video>
+        </div>
       </div>
-    </>
+      <div className={styles.content}>
+        <div className={styles.container}>
+          <div className={styles.text}>
+            <h2>
+              <p>
+                đô thị <b>sinh thái thông minh</b>
+                <br></br>
+                phía đông tp.hcm
+              </p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className={styles.cloud}>
+        <img
+          src="https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/index/cloud.png"
+          alt=""
+        />
+      </div>
+    </div>
   );
 }

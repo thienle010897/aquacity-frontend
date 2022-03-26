@@ -38,6 +38,7 @@
                 position: absolute;
                 background-color: var(--primary-color-);
                 opacity: 0;
+                visibility: hidden;
                 transition: all 0.25s ease-in-out;
                 h5 {
                     margin:  auto auto auto 4px;
@@ -115,6 +116,7 @@
                 .content {
                     transform: translateX(-30px);
                     opacity: 1;
+                    visibility: visible;
                 }
             }
         }

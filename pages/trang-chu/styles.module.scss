@@ -1,12 +1,9 @@
 .video {
-  display: block;
   min-height: 100vh;
+
   .ofcv {
     width: 100%;
     min-height: 100vh;
-    position: absolute;
-    // bottom: 0;
-    // right: 0;
     min-width: 100vw;
     overflow: hidden;
     object-fit: fill;
