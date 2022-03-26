@@ -54,21 +54,21 @@ a {
 }
 .swiper-slide-next {
   width: 820px !important;
-  padding: 0 10px !important;
+  padding: 0 13px !important;
   transition: all 0.5s ease-in-out;
   height: 300px;
   opacity: 0.3;
 }
 .swiper-slide-prev {
   width: 820px !important;
-  padding: 0 10px !important;
+  padding: 0 13px !important;
   height: 300px;
   opacity: 0.3;
   transition: all 0.5s ease-in-out;
 }
 .swiper-slide-active {
   width: 820px !important;
-  padding: 0 10px !important;
+  padding: 0 13px !important;
   opacity: 1 !important;
   height: 300px;
   transition: all 0.5s ease-in-out;

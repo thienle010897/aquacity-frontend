@@ -19,7 +19,7 @@ export default function Sliders() {
         <Swiper
           style={{ maxWidth: "960px" }}
           centeredSlides={true}
-          slidesPerView={1.1}
+          slidesPerView={1.097}
           speed={1200}
           loop={true}
           navigation={true}
