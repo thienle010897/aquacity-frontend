@@ -1,0 +1,37 @@
+.imgMapCanvs {
+  width: 100vw;
+  height: 100vh;
+  .imgMap {
+    position: relative;
+    height: 100%;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      min-width: 100vw;
+      overflow: hidden;
+      object-fit: fill;
+    }
+  }
+}
+.content {
+  z-index: 2;
+  position: absolute;
+  left: 250px;
+  .text {
+    text-align: center;
+    background: transparent;
+    h2 {
+      margin-bottom: 0;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: var(--font-family-);
+      margin-bottom: 15px;
+      color: #07414c;
+      font-size: 30px;
+    }
+  }
+}
