@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.scss   ';
+import styles from './styles.module.scss';
 import { CardMedia } from '@material-ui/core';
 
 export default function Position() {
