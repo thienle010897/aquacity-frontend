@@ -1,35 +1,74 @@
+import clsx from "clsx";
 import React from "react";
 import styles from "./styles.module.scss";
 
-export default function Ecological() {
+const contents = [
+  {
+    title: "~1.000HA",
+    desc: "QUY MÔ DỰ ÁN",
+
+  },
+  {
+    title: "32KM",
+    desc: "ĐƯỜNG SÔNG",
+
+  },
+  {
+    title: "385HA",
+    desc: "DIỆN TÍCH MẶT NƯỚC",
+
+  },
+  {
+    title: "25HA",
+    desc: "CÔNG TRÌNH GIÁO DỤC CÁC CẤP",
+
+  },
+  {
+    title: "3HA",
+    desc: "CÔNG TRÌNH Y TẾ",
+
+  },
+  {
+    title: "20",
+    desc: "CÔNG VIÊN CHỦ ĐỀ",
+
+  },
+  {
+    title: "70%",
+    desc: "DIỆN TÍCH MẢNG XANH & TIỆN ÍCH CHUNG",
+
+  },
+]
+
+export default function Ecological({active}) {
   return (
-    <div >
-      <div className={styles.imgMapCanvs}>
-        <div className={styles.imgMap}>
-          <img
-            src="https://aquacity.com.vn/wp-content/uploads/2021/05/phoenix-resize-rgb.jpg"
-            alt=""
+    <div className={styles.ecological}>
+
+      <div className={styles.video}>
+        <video autoPlay loop muted playsInline className={styles.ofcv}>
+          <source
+            src="https://aquacity.com.vn/wp-content/uploads/2021/05/i_4.mp4"
+            type="video/mp4"
+            width="100%"
           />
-        </div>
+        </video>
       </div>
-      <div className={styles.content}>
-        <div className={styles.container}>
-          <div className={styles.text}>
-            <h2>
-              <p>
-                đô thị <b>sinh thái thông minh</b>
-                <br></br>
-                phía đông tp.hcm
-              </p>
-            </h2>
+      <div className={styles.contents}>
+        {contents.map((item, index)=> (
+          <div key={index} className={clsx(styles.content, {
+              [styles.edu] : index === 3,
+              [styles.last] : index === 6,
+              [styles.active] : active === 3
+            })}
+            style={{
+              transition: `all ${(index + 2) / 10 + 1.5}s ease-in-out`
+            }}
+          >
+            <h1>{item.title}</h1>
+            <div className={styles.line}></div>
+            <h3>{item.desc}</h3>
           </div>
-        </div>
-      </div>
-      <div className={styles.cloud}>
-        <img
-          src="https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/index/cloud.png"
-          alt=""
-        />
+        ))}
       </div>
     </div>
   );
