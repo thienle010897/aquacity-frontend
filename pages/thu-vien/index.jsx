@@ -18,13 +18,13 @@ export default function Library({ active }) {
         >
           <TransitionsModal active={active} />
         </div>
-        <div
+        {/* <div
           className={clsx(styles.videos, {
             [styles.active]: active === 6,
           })}
         >
           <Sliders />
-        </div>
+        </div> */}
       </div>
     </div>
   );
