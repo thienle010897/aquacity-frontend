@@ -43,6 +43,7 @@ const contents = [
 export default function Ecological({active}) {
   return (
     <div className={styles.ecological}>
+      <h2>Sinh thái</h2>
 
       <div className={styles.video}>
         <video autoPlay loop muted playsInline className={styles.ofcv}>

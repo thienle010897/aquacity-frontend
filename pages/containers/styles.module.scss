@@ -42,9 +42,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-top: 50px ;
+
     .slide {
       position: relative;
-      padding: 50px 0;
+      // padding: 25px 0 ;
     }
     .slide.active {
     position: relative;

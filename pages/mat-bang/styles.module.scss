@@ -62,15 +62,16 @@
 }
 @media (max-width: 600px) {
   .ground {
-    height: 70vw;
+    height: 60vw;
+    margin-top: 60px;
     .imgMapCanvs {
-        height: 100vw;
+        height: 60vw;
       
       .imgMap {
-        height: 100vw;
+        height: 60vw;
 
         img {
-          height: 100vw;
+          height: 60vw;
 
         }
       }
