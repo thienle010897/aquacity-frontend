@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-creative';
+import 'swiper/css/pagination';
+import { Mousewheel, Pagination, EffectCreative } from 'swiper';
 import styles from './styles.module.scss';
+import data from '../../contants/dataSubdivision.json';
+import { CardMedia } from '@material-ui/core';
 
-export default function HomePage() {
+export default function Subdivision() {
   return (
     <>
-      <div className={styles.video}>
-        <video autoPlay loop muted playsInline className={styles.ofcv}>
-          <source
-            src='https://aquacity.com.vn/wp-content/uploads/2021/05/banner.mp4'
-            type='video/mp4'
-            width='100%'
-          />
-        </video>
+      <div className={styles.container}>
+        <Swiper
+          speed={1000}
+          grabCursor={true}
+          slidesPerView={'auto'}
+          // spaceBetween={30}
+          className='mySwiper'
+        >
+          {data.map((img) => (
+            <SwiperSlide key={img.id}>
+              <CardMedia
+                image={img.image}
+                style={{ height: 350, width: 700 }}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   );

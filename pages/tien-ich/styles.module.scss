@@ -1,21 +1,46 @@
-.video {
-  display: block;
-  min-height: 100vh;
-  .ofcv {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    min-width: 100vw;
-    overflow: hidden;
-    object-fit: fill;
-    // width: 100%;
-    // min-height: 100vh;
-    // background-size: cover;
-    // height: 100%;
-    // object-fit: cover;
-    // object-position: center;
-    // font-family: "object-fit: cover, object-position: center";
+.imgMapCanvs {
+  width: 100vw;
+  height: 100vh;
+  .imgMap {
+    position: relative;
+    height: 100%;
+    img {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      min-width: 100vw;
+      overflow: hidden;
+      object-fit: fill;
+    }
+  }
+}
+.content {
+  width: 460px;
+  background: rgba(7, 65, 76, 0.6);
+  position: absolute;
+  bottom: 35px;
+  left: 100px;
+  color: white;
+  padding: 5px;
+  text-align: left;
+  font-family: var(--font-family-);
+  h6 {
+    font-family: var(--font-family-);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    li {
+      font-size: 0.9rem;
+      margin: 2px 0;
+    }
   }
 }

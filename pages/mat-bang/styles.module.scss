@@ -4,7 +4,6 @@
   .imgMap {
     position: relative;
     height: 100%;
-
     img {
       width: 100%;
       min-height: 100%;
@@ -18,9 +17,9 @@
   }
 }
 .content {
+  left: 250px;
   z-index: 2;
   position: absolute;
-  left: 250px;
   .text {
     text-align: center;
     background: transparent;

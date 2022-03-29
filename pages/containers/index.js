@@ -12,6 +12,7 @@ import Position from '../vi-tri';
 import Ecological from '../sinh-thai';
 import Utilities from '../tien-ich';
 import navs from '../../contants/navs.json';
+import Subdivision from '../phan-khu';
 export default function Containers() {
   const [direction, setDirection] = useState();
   const pagination = {
@@ -29,7 +30,6 @@ export default function Containers() {
       );
     },
   };
-  console.log(direction);
   return (
     <>
       <Swiper
@@ -52,7 +52,7 @@ export default function Containers() {
         mousewheel={true}
         pagination={pagination}
         modules={[Mousewheel, Pagination, EffectCreative]}
-        className="mySwiper"
+        className='mySwiper'
       >
         <SwiperSlide>
           <HomePage />
@@ -68,6 +68,9 @@ export default function Containers() {
         </SwiperSlide>
         <SwiperSlide>
           <Utilities />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Subdivision />
         </SwiperSlide>
       </Swiper>
     </>

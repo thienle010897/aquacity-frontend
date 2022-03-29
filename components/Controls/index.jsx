@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './styles.module.scss';
-import PublishIcon from '@material-ui/icons/Publish';
 import HomeIcon from '@material-ui/icons/Home';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
 import clsx from 'clsx';
+import { Forward } from '@material-ui/icons';
+import { useSwiper } from 'swiper/react';
+
 const Controls = () => {
   return (
     <div className={styles.controls}>
@@ -37,8 +39,8 @@ const Controls = () => {
           </div>
         </div>
         <div className={styles.button}>
-          <div className={styles.btn}>
-            <PublishIcon className={styles.icon} />
+          <div className={clsx(styles.btn, styles.direction)}>
+            <Forward className={styles.icon} />
           </div>
         </div>
       </div>

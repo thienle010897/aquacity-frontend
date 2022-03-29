@@ -50,14 +50,14 @@ a {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .swiper-pagination-bullets {
   background: var(--bgNavs-color-);
   border-radius: 5px 0 0 5px;
@@ -78,6 +78,10 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
+  &:hover .swiper-content {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -98,32 +102,33 @@ a {
   border-radius: 0 5px 5px 0;
   transform: translateX(-50%);
   pointer-events: none;
-}
-.swiper-content::before {
-  content: '';
-  right: -23px;
-  position: absolute;
-  border: 13px solid;
-  bottom: 0;
-  top: 0;
-  border-color: transparent transparent transparent var(--primary-color-);
-}
-.swiper-pagination-bullet:hover .swiper-content {
-  transform: translateX(-100%);
-  opacity: 1;
+  &::before {
+    content: '';
+    right: -23px;
+    position: absolute;
+    border: 13px solid;
+    bottom: 0;
+    top: 0;
+    border-color: transparent transparent transparent var(--primary-color-);
+  }
 }
 
-.swiper-slide-active .styles_content__n7osk {
-  z-index: 2;
-  position: absolute;
-  left: 250px;
-  animation: textAnimate 1s 0.8s 1 ease-in !important;
-  animation-fill-mode: forwards !important;
-  opacity: 1;
+.swiper-slide-active {
+  .styles_content__n7osk {
+    animation: textAnimate 1s 0.8s 1 ease-in;
+    animation-fill-mode: forwards;
+  }
+  .styles_image__zpBns {
+    animation: cloudAnimate 0.5s 1s 1 ease-in;
+    animation-fill-mode: forwards;
+  }
+  .styles_text___oW5w {
+    animation: desAnimate 0.5s 1 ease forwards;
+  }
 }
 @keyframes textAnimate {
   from {
-    bottom: -300px;
+    bottom: -200px;
     opacity: 0;
   }
   to {
@@ -132,15 +137,22 @@ a {
   }
 }
 
-.swiper-slide-active .styles_image__zpBns {
-  animation: cloudAnimate 0.5s 1s 1 ease-in !important;
-  animation-fill-mode: forwards !important;
-}
 @keyframes cloudAnimate {
   from {
     bottom: -300px;
   }
   to {
     bottom: -120px;
+  }
+}
+
+@keyframes desAnimate {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }

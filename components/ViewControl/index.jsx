@@ -18,6 +18,8 @@ const ViewControl = () => {
           className={clsx(styles.bg, {
             [styles.active]: isHovered,
           })}
+          onMouseOver={handleMouseOver}
+          onMouseLeave={handleMouseLeave}
         >
           <h3>
             Sa bàn 360 <sup>o</sup>
@@ -27,6 +29,8 @@ const ViewControl = () => {
           className={clsx(styles.bg, {
             [styles.active]: isHovered,
           })}
+          onMouseOver={handleMouseOver}
+          onMouseLeave={handleMouseLeave}
         >
           <h3>Toàn cảnh dự án </h3>
         </div>

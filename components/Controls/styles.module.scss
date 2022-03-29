@@ -7,6 +7,9 @@
     .button.home {
       transform: translateY(-125px);
     }
+    .direction {
+      transform: rotate(-90deg);
+    }
     .button {
       position: relative;
       width: 52px;
@@ -89,7 +92,7 @@
           background-color: var(--border-color-);
           .icon {
             color: var(--primary-color-);
-            animation: action 0.3s infinite;
+            animation: action 0.15s infinite;
           }
           @keyframes action {
             0% {
@@ -99,7 +102,7 @@
               transform: rotate(0deg);
             }
             50% {
-              transform: rotate(10deg);
+              transform: rotate(-10deg);
             }
             75% {
               transform: rotate(0deg);

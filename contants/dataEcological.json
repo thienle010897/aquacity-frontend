@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "~1000ha",
+    "description": "QUY MÔ DỰ ÁN"
+  },
+  {
+    "id": 2,
+    "title": "32KM",
+    "description": "ĐƯỜNG SÔNG"
+  },
+  {
+    "id": 3,
+    "title": "385HA",
+    "description": "DIỆN TÍCH MẶT NƯỚC"
+  },
+  {
+    "id": 4,
+    "title": "25HA",
+    "description": "CÔNG TRÌNH  GIÁO DỤC CÁC CẤP"
+  },
+  {
+    "id": 5,
+    "title": "3HA",
+    "description": "CÔNG TRÌNH Y TẾ"
+  },
+  {
+    "id": 6,
+    "title": "20",
+    "description": "CÔNG VIÊN CHỦ ĐỀ"
+  },
+  {
+    "id": 7,
+    "title": "70%",
+    "description": "DIỆN TÍCH MẢNG XANH & TIỆN ÍCH CHUNG"
+  }
+]

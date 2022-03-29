@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import styles from "./styles.module.scss";
-import clsx from "clsx"
+import styles from './styles.module.scss';
+import clsx from 'clsx';
 import Link from 'next/link';
 
 const navs = [
   {
-    name: "Trang chủ",
-    link: "/",
+    name: 'Trang chủ',
+    link: '/',
   },
   {
-    name: "Mặt bằng",
-    link: "/",
+    name: 'Mặt bằng',
+    link: '/',
   },
   {
-    name: "Vị trí",
-    link: "/",
+    name: 'Vị trí',
+    link: '/',
   },
   {
-    name: "Sinh thái",
-    link: "/",
+    name: 'Sinh thái',
+    link: '/',
   },
   {
-    name: "Tiện ích",
-    link: "/",
+    name: 'Tiện ích',
+    link: '/',
   },
 
   // {
@@ -45,27 +45,26 @@ const navs = [
   //   name: "Thông tin chung",
   //   link: "/",
   // },
-
-
-]
+];
 const NavBars = () => {
   const [active, setActive] = useState(0);
   useEffect(() => {
-    localStorage.setItem("indexActive", 0)
-  }, [])
+    localStorage.setItem('indexActive', 0);
+  }, []);
 
   const handleClickNav = (index) => {
-    localStorage.setItem("indexActive", index)
-    setActive(localStorage.getItem("indexActive"))
-  }
+    localStorage.setItem('indexActive', index);
+    setActive(localStorage.getItem('indexActive'));
+  };
   return (
     <div className={styles.navBars}>
       <div className={styles.wrapper}>
         {navs.map((item, index) => (
           <Link key={index} href={item.link}>
-            <div className={clsx(styles.nav, {
-              [styles.active]: Number(active) === index
-            })}
+            <div
+              className={clsx(styles.nav, {
+                [styles.active]: Number(active) === index,
+              })}
               onClick={() => handleClickNav(index)}
             >
               <h5>{index + 1}</h5>
