@@ -174,3 +174,17 @@
         }
     }
 }
+
+@media (max-width: 1280px) {
+
+}
+@media (max-width: 960px) {
+    .controls {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .controls {
+        display: none;
+    }
+}

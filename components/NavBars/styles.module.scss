@@ -70,3 +70,17 @@
         }
     }
 }
+
+@media (max-width: 1280px) {
+
+}
+@media (max-width: 960px) {
+    .navBars {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .navBars {
+        display: none;
+    }
+}

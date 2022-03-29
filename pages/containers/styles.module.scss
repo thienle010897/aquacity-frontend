@@ -41,15 +41,23 @@
       position: relative;
     }
     .slide.active {
+    position: relative;
+    transform: translateY(0);
       
     }
     .slide.current {
+    position: relative;
+    transform: translateY(0);
       
     }
     .slide.beforeActive {
+      position: relative;
+      transform: translateY(0);
   
     }
     .slide.afterActive {
+      position: relative;
+      transform: translateY(0);
   
     }
     
