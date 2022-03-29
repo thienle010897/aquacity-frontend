@@ -15,6 +15,7 @@ import clsx from "clsx";
 import Library from "../thu-vien";
 import News from "../tin-tuc";
 import Register from "../dang-ky-nhan-thong-tin";
+import Infor from "../thong-tin-chung";
 
 export default function Containers() {
   const [active, setActive] = useState(0);
@@ -78,7 +79,7 @@ export default function Containers() {
           {index === 6 && <Library active={active} />}
           {index === 7 && <News active={active} />}
           {index === 8 && <Register />}
-          {index === 9 && <Utilities />}
+          {index === 9 && <Infor />}
         </div>
       ))}
     </div>
