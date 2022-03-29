@@ -11,10 +11,12 @@
         width: 200px;
         img {
             width: 100%;
+            cursor: pointer;
         }
     }
     .menu {
         h1 {
+            cursor: pointer;
             color: var(--primary-color-);
             font-size: 40px;
             font-weight: 700;
