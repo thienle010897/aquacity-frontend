@@ -20,7 +20,7 @@ a {
   --text-color-: #6b6868;
   --color-hover-: #ff3308;
   --boder-color-: rgb(232, 222, 139);
-  --title-color-: rgb(33, 56, 74)
+  --title-color-: rgb(33, 56, 74);
 }
 
 /* --containers */
@@ -175,4 +175,35 @@ a {
   to {
     bottom: 0px;
   }
+}
+.slick-slide {
+  padding: 10px;
+}
+.slick-prev {
+  left: -70px !important;
+}
+.slick-next {
+  right: -45px !important;
+}
+.slick-prev::before {
+  content: url("/image/icon.png") !important;
+}
+.slick-next::before {
+  content: url("https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/btn_toggle.png") !important;
+}
+.slick-prev,
+.slick-next {
+  line-height: 0;
+  position: absolute;
+  top: 35% !important;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
 }

@@ -1,5 +1,52 @@
 .library {
+  background: #fff;
   width: 100vw;
   height: 100vh;
-  background: #fff;
+  box-shadow: 0 2px 16px rgb(0 0 0 / 56%);
+  display: flex;
+  align-items: center;
+
+  .content {
+    position: relative;
+    margin: 0 auto;
+    border: 5px solid #b7883d;
+    padding: 0 140px 25px 140px;
+    padding-bottom: 50px;
+    max-width: 940px;
+    background-image: url("https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/index/i_7_bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    .title {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      h2 {
+        // -webkit-transform: translateY(0);
+        // transform: translateY(0);
+        // opacity: 1;
+        text-align: center;
+        color: #07414c;
+        font-size: 40px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        display: inline-flex;
+        transform: translateY(20px);
+        opacity: 1;
+        transition: all 0.5s linear;
+        margin-top: -38px;
+        background-color: #fff;
+        padding: 0 30px;
+      }
+    }
+    .video {
+    }
+  }
 }

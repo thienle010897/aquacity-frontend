@@ -26,7 +26,7 @@ export default function Containers() {
 
   const handleOnWheel = (event) => {
     if (Number(event.nativeEvent.timeStamp) - timeStamp > 1000) {
-      setPrevIndex(active)
+      setPrevIndex(active);
 
       if (event.nativeEvent.deltaY > 0) {
         setActive((prev) => {
@@ -46,8 +46,8 @@ export default function Containers() {
         });
       }
       settimeStamp(event.nativeEvent.timeStamp);
-      const timeOut = setTimeout(()=> setPrevIndex(null), 700)
-      return () => clearTimeout(timeOut)
+      const timeOut = setTimeout(() => setPrevIndex(null), 700);
+      return () => clearTimeout(timeOut);
     }
   };
 
@@ -72,11 +72,11 @@ export default function Containers() {
           {index === 0 && <HomePage />}
           {index === 1 && <Ground />}
           {index === 2 && <Position />}
-          {index === 3 && <Ecological active={active}/>}
+          {index === 3 && <Ecological active={active} />}
           {index === 4 && <Utilities />}
           {index === 5 && <Sliders />}
-          {index === 6 && <Library />}
-          {index === 7 && <News active={active}/>}
+          {index === 6 && <Library active={active} />}
+          {index === 7 && <News active={active} />}
           {index === 8 && <Register />}
           {index === 9 && <Utilities />}
         </div>
