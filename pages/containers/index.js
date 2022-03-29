@@ -13,6 +13,7 @@ import Ecological from '../sinh-thai';
 import Utilities from '../tien-ich';
 import navs from '../../contants/navs.json';
 import Subdivision from '../phan-khu';
+import Library from '../thu-vien';
 export default function Containers() {
   const [direction, setDirection] = useState();
   const pagination = {
@@ -71,6 +72,9 @@ export default function Containers() {
         </SwiperSlide>
         <SwiperSlide>
           <Subdivision />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Library />
         </SwiperSlide>
       </Swiper>
     </>

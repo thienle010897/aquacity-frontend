@@ -126,6 +126,12 @@ a {
     animation: desAnimate 0.5s 1 ease forwards;
   }
 }
+
+.swiper-slide-prev,
+.swiper-slide-next .styles_slide__khfRh {
+  opacity: 0.4 !important;
+}
+
 @keyframes textAnimate {
   from {
     bottom: -200px;

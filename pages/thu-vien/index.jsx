@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.scss';
 
-export default function HomePage() {
+export default function Library() {
   return (
     <>
       <div className={styles.video}>
