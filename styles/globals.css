@@ -23,7 +23,6 @@ a {
   --title-color-: rgb(33, 56, 74);
 }
 
-
 #app {
   height: 100%;
 }
@@ -81,4 +80,7 @@ body {
 }
 .swiper-slide-active.phankhu_mrb30__dg_AM {
   opacity: 1 !important;
+}
+.swiper-slide-duplicate.slider_items__jq2_W {
+  margin-bottom: 20px;
 }

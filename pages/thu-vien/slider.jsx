@@ -37,32 +37,51 @@ export default function Sliders({ active }) {
     },
   ];
   return (
-    <div
-      className={clsx(styles.carousel, {
-        [styles.active]: active === 6,
-      })}
-    >
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={40}
-        loop={true}
-        speed={1200}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+    <div className={styles.mrb}>
+      <div
+        className={clsx(styles.carousel, {
+          [styles.active]: active === 6,
+        })}
       >
-        {img &&
-          img.map((data, index) => (
-            <SwiperSlide className={styles.items} key={index}>
-              <div className={styles.item}>
-                <img src={data.img} alt="" />
-                <div className={styles.text}>
-                  <h3>{data.title}</h3>
+        <Swiper
+          style={{ maxWidth: "950px" }}
+          spaceBetween={20}
+          hashNavigation={{
+            watchState: true,
+          }}
+          speed={1300}
+          loop={true}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          }}
+          className="mySwiper"
+        >
+          {img &&
+            img.map((data, index) => (
+              <SwiperSlide className={styles.items} key={index}>
+                <div className={styles.item}>
+                  <img src={data.img} alt="" />
+                  <div className={styles.text}>
+                    <h3>{data.title}</h3>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-      </Swiper>
+              </SwiperSlide>
+            ))}
+        </Swiper>
+      </div>
     </div>
   );
 }

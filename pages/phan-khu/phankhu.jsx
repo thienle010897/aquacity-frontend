@@ -37,6 +37,10 @@ export default function Sliders() {
   return (
     <div className={styles.sliders}>
       <div className={styles.mrb25}>
+        <div className={styles.titleBlock}>
+          <h2 style={{ textAlign: "center" }}>Phân Khu</h2>
+        </div>
+
         <Swiper
           style={{ maxWidth: "950px" }}
           spaceBetween={20}
