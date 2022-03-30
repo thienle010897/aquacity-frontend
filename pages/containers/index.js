@@ -47,7 +47,7 @@ export default function Containers() {
         });
       }
       settimeStamp(event.nativeEvent.timeStamp);
-      const timeOut = setTimeout(() => setPrevIndex(null), 700);
+      const timeOut = setTimeout(() => setPrevIndex(null), 800);
       return () => clearTimeout(timeOut);
     }
   };
