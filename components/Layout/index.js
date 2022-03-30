@@ -3,7 +3,8 @@ import Head from "next/head";
 import styles from "./styles.module.scss";
 import Header from "../Header";
 import Controls from "../Controls";
-import NavBars from "../NavBars";
+import ButtonBottom from "../ButtonBottom";
+
 import ContextProvider from '../../contants/Context';
 
 
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
           <Header />
           <Controls />
           {/* <NavBars /> */}
+          <ButtonBottom/>
           {children}
         </div>
       </ContextProvider>

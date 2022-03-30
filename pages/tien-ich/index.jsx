@@ -54,7 +54,7 @@ export default function Utilities() {
       </div>
       <Grid container  className={styles.utilitiesAqua}>
         <Grid className={styles.utilitiesList}
-          item sm={6} xs={6} md={4}
+          item sm={12} xs={12} md={4}
           container spacing={1}
         >
           <Grid item sm={12} xs={12} md={12} className={styles.utilitiesListTitle}>

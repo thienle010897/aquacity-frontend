@@ -1,12 +1,13 @@
 .header {
     position: fixed;
-    z-index: 99999999999999999999999999;
-    top: 20px;
-    left: 10%;
-    width: 80%;
+    z-index: 999999999;
+    top: 0;
+    padding: 10px 5%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
     .logo {
         width: 200px;
         img {
@@ -15,13 +16,52 @@
         }
     }
     .menu {
+        z-index: 1000006666;
+        position: relative;
         h1 {
             cursor: pointer;
+            transform: translateY(-0px) translateX(200px);
             color: var(--primary-color-);
             font-size: 40px;
             font-weight: 700;
+            transition: all 1s ease-in-out;
+
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        h1.active {
+            transform: translateY(-0px);
+
+        }
+        div {
+            position: absolute;
+            transform: translateY(-70px) translateX(200px);
+            transition: all 1.2s ease-in-out;
+            .icon {
+                cursor: pointer;
+                color: var(--boder-color-);
+                font-size: 40px;
+            }
+        }
+        div.active {
+            transform: translateY(-70px) translateX(45px);
+
+        }
+    }
+    .menuList {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        transform: scaleX(0);
+        height: 100vh;
+        background-color: rgba(7, 65, 76, 0.9);
+        transition: all 1.2s ease-in-out;
+        transform-origin: right;
+        z-index: 9999999;
+    }
+    .menuList.active {
+        transform: scaleX(1);
+
     }
 }
 
@@ -63,6 +103,7 @@
         align-items: center;
         background-color: #fff;
         padding: 0 20px;
+        height: 60px;
         .logo {
             width: 100px;
             img {
@@ -74,6 +115,20 @@
             h1 {
                 font-size: 20px;
                 font-weight: 700;
+            }
+            div {
+                position: absolute;
+                transform: translateY(-50px) translateX(200px);
+                transition: all 1.2s ease-in-out;
+                .icon {
+                    cursor: pointer;
+                    color: var(--boder-color-);
+                    font-size: 40px;
+                }
+            }
+            div.active {
+                transform: translateY(-50px) translateX(25px);
+    
             }
         }
     }

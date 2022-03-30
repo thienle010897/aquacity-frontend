@@ -8,6 +8,7 @@
 
     img {
       width: 100%;
+      height: 100vh;
     }
   }
 
@@ -43,6 +44,8 @@
     .form {
       margin-bottom: 20px;
       .item {
+        // width: 100%;
+        
         input {
           width: 100%;
           border: 1px solid rgb(197, 170, 17);
@@ -79,3 +82,103 @@
     }
   }
 }
+@media (max-width: 960px) {
+  .register {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin-top: 20px;
+    .bg {
+      height: 60vh;
+      display: none;
+      img {
+        width: 100%;
+      }
+    }
+  
+    .contents {
+      position: absolute;
+      height: 50vh;
+      top: 0;
+      padding: 50px 0;
+      transform: translateY(0);
+      background-color: rgb(7, 65, 76);
+      .contentsTitle {
+        h1 {
+          font-size: 25px;
+        }
+        img {
+        }
+        h5 {
+  
+        }
+      
+      }
+      .form {
+        .item {
+          margin: 10px 0;
+          input {
+          }
+        }
+        
+      }
+      .buttonAll {
+        button {
+          width: 40%;
+          padding: 10px;
+          font-size: 20px;
+           
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .register {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin-top: 20px;
+    .bg {
+      display: none;
+      
+    }
+  
+    .contents {
+      padding: 20px 10px;
+    height: 70vh;
+
+      .gridFake {
+        display: none;
+      }
+      .contentsTitle {
+        h1 {
+          font-size: 15px;
+        }
+        img {
+        }
+        h5 {
+          font-size: 12px;
+  
+        }
+      
+      }
+      .form {
+        .item {
+          input {
+          }
+        }
+        
+      }
+      .buttonAll {
+        button {
+          width: 55%;
+          padding: 8px;
+          font-size: 18px;
+           
+        }
+      }
+    }
+  }
+}
+

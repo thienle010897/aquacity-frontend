@@ -82,7 +82,7 @@
           padding: 7px;
           background-color: transparent;
           border: 1px solid var(--primary-color-);
-          color: #000;
+          color: var(--title-color-);
           font-weight: 600;
           font-size: 16px;
           margin: auto;
@@ -93,6 +93,141 @@
             color: #fff;
           }
 
+      }
+    }
+  }
+}
+@media (max-width: 960px) {
+  .news {
+    width: 100%;
+    height: 80vh;
+    margin-top: 150px;
+    .bg {
+      height: 60vh;
+      display: none;
+      img {
+        width: 100%;
+  
+      }
+    }
+    .contents.active {
+      transform: translateY(-20%);
+      
+    }
+    .contents {
+      visibility: visible;
+      opacity: 1;
+      height: 100%;
+
+      position: relative;
+      top: 0;
+      .contentsTitle {
+        h1 {
+          color: var(--title-color-);
+          font-size: 40px;
+        }
+      }
+      .contentsList {
+        .content {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          .image {
+            width: 50%;
+            display: flex;
+            img {
+              width: 100%;
+              margin: auto;
+            }
+          }
+          h5 {
+            width: 50%;
+            padding: 10px 15px;
+            font-size: 20px;
+
+          }
+          button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 30%;
+          }
+        }
+      }
+      .buttonAll {
+        button {
+          width: 40%;
+          padding: 10px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .news {
+    width: 100%;
+    height: 70vh;
+    margin-top: 50px;
+    .bg {
+      height: 60vh;
+      display: none;
+      img {
+        width: 100%;
+  
+      }
+    }
+    .contents.active {
+      transform: translateY(-20%);
+      
+    }
+    .contents {
+      visibility: visible;
+      opacity: 1;
+      position: relative;
+      top: 0;
+      .contentsTitle {
+        h1 {
+          color: var(--title-color-);
+          font-size: 25px;
+          margin: 4px 0;
+        }
+      }
+      .contentsList {
+        .content {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          .image {
+            width: 50%;
+            display: flex;
+            img {
+              width: 100%;
+              margin: auto;
+            }
+          }
+          h5 {
+            width: 50%;
+            padding: 10px 15px;
+            font-size: 12px;
+
+          }
+          button {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 25%;
+            padding: 4px;
+            font-size: 12px;
+          }
+        }
+      }
+      .buttonAll {
+        button {
+          width: 40%;
+          padding: 4px;
+          margin-top: 10px;
+        }
       }
     }
   }

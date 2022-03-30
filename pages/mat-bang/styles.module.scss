@@ -6,20 +6,18 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    .imgMap {
-      position: relative;
-      height: 100%;
+    position: relative;
+    
       img {
         width: 100%;
         height: 100vh;
         position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100vw;
         overflow: hidden;
         object-fit: fill;
       }
-    }
+  }
+  .contentMobi {
+    display: none;
   }
   .content {
     .container {
@@ -58,25 +56,49 @@
 
 }
 @media (max-width: 960px) {
-  
+  .ground {
+    height: 60vw;
+    margin-top: 62px;
+    background-image: linear-gradient(-150deg,#e8de8b,#07414c);
+    padding: 10px;
+    .imgMapCanvs {
+        height: calc(60vw - 20px);
+        img {
+          height: calc(60vw - 20px);
+
+
+        }
+    }
+    .content {
+      position: relative;
+
+      .container {
+        .text {
+          h2 {
+            b {
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 600px) {
   .ground {
     height: 60vw;
-    margin-top: 60px;
+    margin-top: 17px;
     .imgMapCanvs {
-        height: 60vw;
-      
-      .imgMap {
-        height: 60vw;
+      height: calc(60vw - 20px);
 
         img {
-          height: 60vw;
+          height: calc(60vw - 20px);
+
 
         }
-      }
     }
     .content {
+      position: relative;
+      
       .container {
         .text {
           h2 {

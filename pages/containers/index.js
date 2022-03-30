@@ -71,7 +71,7 @@ export default function Containers() {
           })}
         >
           {index === 0 && <HomePage />}
-          {index === 1 && <Ground />}
+          {index === 1 && <Ground active={active}/>}
           {index === 2 && <Position />}
           {index === 3 && <Ecological active={active} />}
           {index === 4 && <Utilities />}

@@ -15,9 +15,6 @@
 
 }
 @media (max-width: 960px) {
-  
-}
-@media (max-width: 600px) {
   .image {
     width: 100%;
     display: flex;
@@ -27,11 +24,22 @@
     h2 {
       display: flex;
       margin: 0 auto 10px;
+      font-size: 40px;
+      color: var(--title-color-);
     }
     img {
       width: 100%;
       overflow: hidden;
     }
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    h2 {
+      font-size: 20px;
+
+    }
+    
   }
 }
 

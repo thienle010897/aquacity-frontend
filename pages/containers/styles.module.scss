@@ -34,9 +34,6 @@
 
 }
 @media (max-width: 960px) {
-  
-}
-@media (max-width: 600px) {
   .containers {
     overflow: scroll;
     width: 100%;
@@ -46,6 +43,7 @@
 
     .slide {
       position: relative;
+      margin: 10px 0;
       // padding: 25px 0 ;
     }
     .slide.active {
@@ -70,4 +68,7 @@
     }
     
   }
+}
+@media (max-width: 600px) {
+  
 }

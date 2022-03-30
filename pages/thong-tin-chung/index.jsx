@@ -10,17 +10,17 @@ export default function Infor() {
         <img src="https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/index/i_9.jpg" />
       </div>
         <Grid container spacing={1} className={clsx(styles.contents)}>
-          <Grid container item xs={4} sm={4} md={4} className={styles.novalandImage}>
+          <Grid container item xs={12} sm={12} md={4} className={styles.novalandImage}>
               <img src="https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/logo_novaland.png" />
           </Grid>
-          <Grid container  item xs={4} sm={4} md={4} className={styles.between}>
+          <Grid container  item xs={12} sm={12} md={4} className={styles.between}>
             <h2>ĐỊA CHỈ DỰ ÁN</h2>
             <h1>Tp. Biên Hòa, Đồng Nai</h1>
             <h2>HOTLINE</h2>
             <h4>TP. Hồ Chí Minh</h4>
             <h1>0943 79 79 79</h1>
           </Grid>
-          <Grid container  item xs={4} sm={4} md={4} className={styles.right}>
+          <Grid container  item xs={12} sm={12} md={4} className={styles.right}>
             <h2>SÀN GIAO DỊCH DỰ ÁN</h2>
             <h3>NOVALAND GALLERY</h3>
             <h2>2Bis Nguyễn Thị Minh Khai, Phường Đa Kao, Quận 1, TP.HCM</h2>

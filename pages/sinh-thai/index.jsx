@@ -15,27 +15,31 @@ const contents = [
   },
   {
     title: "385HA",
-    desc: "DIỆN TÍCH MẶT NƯỚC",
+    desc: "DIỆN TÍCH",
+    descTwo: "MẶT NƯỚC"
 
   },
   {
     title: "25HA",
-    desc: "CÔNG TRÌNH GIÁO DỤC CÁC CẤP",
-
+    desc: "CÔNG TRÌNH ",
+    descTwo: "GIÁO DỤC CÁC CẤP"
   },
   {
     title: "3HA",
-    desc: "CÔNG TRÌNH Y TẾ",
+    desc: "CÔNG TRÌNH",
+    descTwo: "Y TẾ"
 
   },
   {
     title: "20",
-    desc: "CÔNG VIÊN CHỦ ĐỀ",
+    desc: "CÔNG VIÊN ",
+    descTwo: "CHỦ ĐỀ"
 
   },
   {
     title: "70%",
-    desc: "DIỆN TÍCH MẢNG XANH & TIỆN ÍCH CHUNG",
+    desc: "DIỆN TÍCH MẢNG XANH & ",
+    descTwo: "TIỆN ÍCH CHUNG"
 
   },
 ]
@@ -46,6 +50,7 @@ export default function Ecological({active}) {
       <h2>Sinh thái</h2>
 
       <div className={styles.video}>
+        <img src="https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/index/i_4_1.jpg"/>
         <video autoPlay loop muted playsInline className={styles.ofcv}>
           <source
             src="https://aquacity.com.vn/wp-content/uploads/2021/05/i_4.mp4"
@@ -68,9 +73,11 @@ export default function Ecological({active}) {
             <h1>{item.title}</h1>
             <div className={styles.line}></div>
             <h3>{item.desc}</h3>
+            {item.descTwo && <h3>{item.descTwo}</h3>}
           </div>
         ))}
       </div>
+        <span><h3>Xem thêm</h3></span>
     </div>
   );
 }

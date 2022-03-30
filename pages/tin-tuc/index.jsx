@@ -30,7 +30,7 @@ export default function News({ active }) {
         [styles.active] : active === 7
       })}>
         <Grid container item xs={1} sm={1} md={2}></Grid>
-        <Grid container spacing={1} item xs={10} sm={10} md={8}>
+        <Grid container spacing={1} item xs={12} sm={12} md={8}>
           <Grid item xs={12} sm={12} md={12} className={styles.contentsTitle}>
             <h1>TIN TỨC NỔI BẬT</h1>
           </Grid>
@@ -39,8 +39,8 @@ export default function News({ active }) {
               <Grid
                 key={index}
                 item
-                xs={4}
-                sm={4}
+                xs={12}
+                sm={12}
                 md={4}
                 className={styles.content}
               >
