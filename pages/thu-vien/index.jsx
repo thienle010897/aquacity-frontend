@@ -11,20 +11,12 @@ export default function Library({ active }) {
         <div className={styles.title}>
           <h2>Thư viện</h2>
         </div>
-        <div
-          className={clsx(styles.video, {
-            [styles.active]: active === 6,
-          })}
-        >
+        <div className={styles.video}>
           <TransitionsModal active={active} />
         </div>
-        {/* <div
-          className={clsx(styles.videos, {
-            [styles.active]: active === 6,
-          })}
-        >
-          <Sliders />
-        </div> */}
+        <div className={styles.videos}>
+          <Sliders active={active} />
+        </div>
       </div>
     </div>
   );

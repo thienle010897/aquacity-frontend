@@ -12,6 +12,27 @@ import styles from "./slider.module.scss";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Link from "next/link";
 
+const img = [
+  {
+    img: "https://aquacity.com.vn/wp-content/uploads/2021/12/Background-trainghiemtour-01-1.jpg",
+  },
+  {
+    img: "https://aquacity.com.vn/wp-content/uploads/2021/04/dao-phuong-hoang-thumbnail.jpg",
+  },
+  {
+    img: "https://aquacity.com.vn/wp-content/uploads/2021/04/the-suite-1.jpg",
+  },
+  {
+    img: "https://aquacity.com.vn/wp-content/uploads/2021/04/the-grand-villas.jpg",
+  },
+  {
+    img: "https://aquacity.com.vn/wp-content/uploads/2021/04/the-stella-thumbnail.png",
+  },
+  {
+    img: "https://aquacity.com.vn/wp-content/uploads/2021/04/the-valencia-river-park-2.jpg",
+  },
+];
+console.log("dsadas", img);
 export default function Sliders() {
   return (
     <div className={styles.sliders}>
@@ -20,133 +41,38 @@ export default function Sliders() {
           <Swiper
             style={{ maxWidth: "960px" }}
             centeredSlides={true}
-            slidesPerView={1.097}
+            slidesPerView={1.106}
             speed={1200}
             loop={true}
             navigation={true}
+            spaceBetween={20}
             modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <div className={styles.item}>
-                <Link href="/">
-                  <img
-                    src="https://aquacity.com.vn/wp-content/uploads/2021/12/Background-trainghiemtour-01-1.jpg"
-                    alt=""
-                  />
-                </Link>
-                <div className={styles.content}>
-                  <div className={styles.desc_box}>
-                    <div className={styles.row_content}>
-                      <div className={styles.col_content}>
-                        <h2>Hành trình tham quan</h2>
+            {img &&
+              img.map((data, index) => (
+                <SwiperSlide key={index} className={styles.slide}>
+                  <div className={styles.item}>
+                    <Link href="/">
+                      <img src={data.img} alt="" />
+                    </Link>
+                    <div className={styles.content}>
+                      <div className={styles.desc_box}>
+                        <div className={styles.row_content}>
+                          <div className={styles.col_content}>
+                            <h2>Hành trình tham quan</h2>
+                          </div>
+                          <div className={styles.col_contents}>
+                            <p>điểm đến phồn hoa</p>
+                            <p>Sinh thái giao hoà</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className={styles.col_contents}>
-                        <p>điểm đến phồn hoa</p>
-                        <p>Sinh thái giao hoà</p>
-                      </div>
+                      <span>khám phá ngay</span>
                     </div>
                   </div>
-                  <span>khám phá ngay</span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.item}>
-                <Link href="/">
-                  <img
-                    src="https://aquacity.com.vn/wp-content/uploads/2021/12/Background-trainghiemtour-01-1.jpg"
-                    alt=""
-                  />
-                </Link>
-                <div className={styles.content}>
-                  <div className={styles.desc_box}>
-                    <div className={styles.row_content}>
-                      <div className={styles.col_content}>
-                        <h2>Hành trình tham quan</h2>
-                      </div>
-                      <div className={styles.col_contents}>
-                        <p>điểm đến phồn hoa</p>
-                        <p>Sinh thái giao hoà</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span>khám phá ngay</span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.item}>
-                <Link href="/">
-                  <img
-                    src="https://aquacity.com.vn/wp-content/uploads/2021/12/Background-trainghiemtour-01-1.jpg"
-                    alt=""
-                  />
-                </Link>
-                <div className={styles.content}>
-                  <div className={styles.desc_box}>
-                    <div className={styles.row_content}>
-                      <div className={styles.col_content}>
-                        <h2>Hành trình tham quan</h2>
-                      </div>
-                      <div className={styles.col_contents}>
-                        <p>điểm đến phồn hoa</p>
-                        <p>Sinh thái giao hoà</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span>khám phá ngay</span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.item}>
-                <Link href="/">
-                  <img
-                    src="https://aquacity.com.vn/wp-content/uploads/2021/04/dao-phuong-hoang-thumbnail.jpg"
-                    alt=""
-                  />
-                </Link>
-                <div className={styles.content}>
-                  <div className={styles.desc_box}>
-                    <div className={styles.row_content}>
-                      <div className={styles.col_content}>
-                        <h2>Hành trình tham quan</h2>
-                      </div>
-                      <div className={styles.col_contents}>
-                        <p>điểm đến phồn hoa</p>
-                        <p>Sinh thái giao hoà</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span>khám phá ngay</span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.item}>
-                <Link href="/">
-                  <img
-                    src="https://aquacity.com.vn/wp-content/uploads/2021/04/dao-phuong-hoang-thumbnail.jpg"
-                    alt=""
-                  />
-                </Link>
-                <div className={styles.content}>
-                  <div className={styles.desc_box}>
-                    <div className={styles.row_content}>
-                      <div className={styles.col_content}>
-                        <h2>Hành trình tham quan</h2>
-                      </div>
-                      <div className={styles.col_contents}>
-                        <p>điểm đến phồn hoa</p>
-                        <p>Sinh thái giao hoà</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span>khám phá ngay</span>
-                </div>
-              </div>
-            </SwiperSlide>
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </div>

@@ -41,34 +41,25 @@ a {
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper {
-  /* position: absolute !important; */
-}
-.swiper-slide-next {
+
+.swiper-slide-next.slider_slide__fP04T {
   width: 820px !important;
-  padding: 0 13px !important;
   transition: all 0.5s ease-in-out;
-  height: 300px;
   opacity: 0.3;
 }
-.swiper-slide-prev {
+.swiper-slide-prev.slider_slide__fP04T {
   width: 820px !important;
-  padding: 0 13px !important;
-  height: 300px;
   opacity: 0.3;
   transition: all 0.5s ease-in-out;
 }
-.swiper-slide-active {
+.swiper-slide-active.slider_slide__fP04T {
   width: 820px !important;
-  padding: 0 13px !important;
   opacity: 1 !important;
-  height: 300px;
   transition: all 0.5s ease-in-out;
 }
 .swiper-button-prev:after {
   transform: rotate(180deg);
   content: url("https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/btn_toggle.png") !important;
-  font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
   text-transform: none;
@@ -79,7 +70,6 @@ a {
 }
 .swiper-button-next::after {
   content: url("https://aquacity.com.vn/wp-content/themes/aquacity/resources/assets/btn_toggle.png") !important;
-  font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
   text-transform: none;
@@ -107,13 +97,7 @@ a {
   color: #07414c !important;
 }
 .swiper {
-  margin-left: auto;
-  margin-right: auto;
   position: unset !important;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
 }
 .swiper-button-next {
   right: -40px !important;
@@ -137,9 +121,9 @@ a {
   position: absolute;
   background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 100%;
   left: 0px;
-  opacity: 0.8;
+  opacity: 0.7;
   animation: cloudAnimate 1.2s ease-in-out !important;
   animation-fill-mode: forwards !important;
 }
@@ -167,6 +151,7 @@ a {
     bottom: 0px;
   }
 }
-
-
-
+.swiper-slide.slider_items__jq2_W {
+  height: 200px !important;
+  margin-bottom: 20px;
+}
