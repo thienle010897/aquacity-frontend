@@ -17,26 +17,27 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
+    .title.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
     .title {
+      opacity: 0;
+      visibility: hidden;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
+      transition: all 1.5s ease-in-out;
       justify-content: center;
+      transform: translateY(-10px);
       h2 {
         text-align: center;
         color: #07414c;
         font-size: 40px;
         text-transform: uppercase;
-        -webkit-transition: all 0.5s linear;
-        -o-transition: all 0.5s linear;
-        -webkit-transform: translateY(20px);
-        -ms-transform: translateY(20px);
         display: inline-flex;
-        transform: translateY(20px);
         opacity: 1;
-        transition: all 0.5s linear;
         margin-top: -38px;
         background-color: #fff;
         padding: 0 30px;

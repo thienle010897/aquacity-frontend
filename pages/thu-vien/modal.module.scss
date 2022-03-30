@@ -1,7 +1,11 @@
 .news_video_item.active {
   transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 .news_video_item {
+  opacity: 0;
+  visibility: hidden;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -9,7 +13,7 @@
   height: 100%;
   display: block;
   transform: translateY(100px);
-  transition: all 2s ease-in-out;
+  transition: all 1.5s ease-in-out;
 
   img {
     cursor: pointer;

@@ -1,8 +1,12 @@
 .carousel.active {
+  opacity: 1;
   transform: translateY(50%);
+  visibility: visible;
 }
 .carousel {
-  transform: translateY(400px);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(250px);
   max-width: 80%;
   position: absolute;
   bottom: 0;

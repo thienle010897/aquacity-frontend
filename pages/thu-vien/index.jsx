@@ -8,7 +8,7 @@ export default function Library({ active }) {
   return (
     <div className={styles.library}>
       <div className={styles.content}>
-        <div className={styles.title}>
+        <div className={clsx(styles.title, { [styles.active]: active === 6 })}>
           <h2>Thư viện</h2>
         </div>
         <div className={styles.video}>

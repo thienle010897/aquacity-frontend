@@ -8,7 +8,7 @@ import Ground from "../mat-bang";
 import Position from "../vi-tri";
 import Ecological from "../sinh-thai";
 import Utilities from "../tien-ich";
-import Sliders from "../phan-khu";
+import Sliders from "../phan-khu/phankhu";
 import styles from "./styles.module.scss";
 import NavBars from "../../components/NavBars";
 import clsx from "clsx";
@@ -71,7 +71,7 @@ export default function Containers() {
           })}
         >
           {index === 0 && <HomePage />}
-          {index === 1 && <Ground active={active}/>}
+          {index === 1 && <Ground active={active} />}
           {index === 2 && <Position />}
           {index === 3 && <Ecological active={active} />}
           {index === 4 && <Utilities />}
